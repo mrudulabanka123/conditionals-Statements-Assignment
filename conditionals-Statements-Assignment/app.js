@@ -382,3 +382,117 @@ if (ticketPrices !== -1) {
     console.log(` Final Amount: ₹${finalAmounts}`);
 }
 
+//11th question
+if (percentage >= 90) {
+    grade = "A";
+} else if (percentage >= 80) {
+    grade = "B";
+} else if (percentage >= 70) {
+    grade = "C";
+} else if (percentage >= 60) {
+    grade = "D";
+} else if (percentage >= 50) {
+    grade = "E";
+} else if (percentage >= 45 && percentage < 50 && isFinalYear) {
+    grade = "Re-evaluation";
+} else {
+    grade = "Fail";
+}
+
+//12th question
+let yearsOfExperience = 12;   // example input
+let joinedMonth = "December"; // example input
+let bonus = 0;
+
+if (yearsOfExperience > 15) {
+    bonus = 50000;
+} else if (yearsOfExperience >= 10) {
+    bonus = 30000;
+} else if (yearsOfExperience >= 5) {
+    bonus = 20000;
+} else if (yearsOfExperience >= 2) {
+    bonus = 10000;
+} else {
+    bonus = 5000;
+}
+
+// Extra bonus if joined in December
+if (joinedMonth === "December") {
+    bonus += 2000;
+}
+
+console.log("Total Bonus = ₹" + bonus);
+
+//13th question
+
+let temperature = 25;   // example input
+let isRaining = true;   // example input
+let weatherCategory = "";
+
+if (temperature > 40) {
+    weatherCategory = "Extremely Hot";
+} else if (temperature >= 30) {
+    weatherCategory = "Hot";
+} else if (temperature >= 20) {
+    weatherCategory = "Warm";
+} else if (temperature >= 10) {
+    weatherCategory = "Cool";
+} else {
+    weatherCategory = "Cold";
+}
+
+if (isRaining) {
+    weatherCategory += " and Rainy";
+}
+
+console.log("Weather Category: " + weatherCategory);
+
+//14th question
+
+let purchaseAmount = 18000;   // example input
+let isBirthday = true;        // example input
+let discount = 0;
+
+if (purchaseAmount > 20000) {
+    discount = 25;
+} else if (purchaseAmount >= 15000) {
+    discount = 20;
+} else if (purchaseAmount >= 10000) {
+    discount = 15;
+} else if (purchaseAmount >= 5000) {
+    discount = 10;
+} else {
+    discount = 0;
+}
+
+// Extra 5% discount on birthday
+if (isBirthday) {
+    discount += 5;
+}
+
+console.log("Total Discount = " + discount + "%");
+
+//15th question
+
+let completionTime = 3.5;  // example input in hours
+let age1 = 16;              // example input
+let category1 = "";
+
+if (completionTime < 2) {
+    category1 = "Elite";
+} else if (completionTime < 3) {
+    category1 = "Advanced";
+} else if (completionTime < 4) {
+    category1 = "Intermediate";
+} else if (completionTime < 5) {
+    category1 = "Beginner";
+} else {
+    category1 = "Novice";
+}
+
+// Special Youth Badge
+if (age1 < 18) {
+    category1 += " + Youth Badge";
+}
+
+console.log("Runner Category: " + category1);
